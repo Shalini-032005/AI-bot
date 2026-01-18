@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroShop AI 🤖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="chat-window">
+        <button class="close">× close</button>
+        <div class="chat-header-bar">
+            <button class="history-toggle" title="Chat History">
+                <img src="history.png" alt="history">
+            </button>
+            <button class="new-chat" title="New Chat">
+                <img src="newchat.png" alt="new chat">
+            </button>
+        </div>
+        
+        <div class="chat-container">
+            <div class="chat-history-sidebar" id="chatHistory">
+                <div class="history-header">
+                    <h3>Recent Chats</h3>
+                    <button class="close-history">×</button>
+                </div>
+                <div class="history-list" id="historyList">
+                    <!-- Chat history items will be inserted here -->
+                </div>
+            </div>
+            
+            <div class="chat" id="chatBox">
+                <div class="model">
+                    <p>Hi! How can I help you with electronics today?</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="input-area">
+            <input placeholder="Ask me about electronics..." type="text" id="chatInput">
+            <button id="sendButton">
+                <img src="send-icon.png" alt="send">
+            </button>
+        </div>
+    </section>
+
+    <div class="chat-button">
+        <img src="chat-icon.png" alt="start chat">
+    </div>
+
+    <script type="module" src="main.js"></script>
+    
+</body>
+</html>
